@@ -31,10 +31,7 @@ function wins(userchoice, computerchoice) {
     convert(computerchoice) +
     big +
     " . You win! ";
-  document.getElementById(userchoice).classList.add("green-glow");
-  setTimeout(function () {
-    document.getElementById(userchoice).classList.remove("green-glow");
-  }, 1000);
+ 
 }
 function lose(userchoice, computerchoice) {
   comp_score++;
@@ -49,10 +46,7 @@ function lose(userchoice, computerchoice) {
     convert(userchoice) +
     small +
     " . You lose !";
-  document.getElementById(userchoice).classList.add("red-glow");
-  setTimeout(function () {
-    document.getElementById(userchoice).classList.remove("red-glow");
-  }, 1000);
+ 
 }
 function draw(userchoice, computerchoice) {
   user_span.innerHTML = user_score;
@@ -66,10 +60,7 @@ function draw(userchoice, computerchoice) {
     convert(computerchoice) +
     big +
     " . It's a tie ! ";
-  document.getElementById(userchoice).classList.add("grey-glow");
-  setTimeout(function () {
-    document.getElementById(userchoice).classList.remove("grey-glow");
-  }, 1000);
+ 
 }
 function game(userchoice) {
   var computerchoice = getcomputerchoice();
