@@ -81,11 +81,11 @@ function game(userchoice) {
     wins(userchoice, computerchoice);
   } else if (userchoice == "s" && computerchoice == "p") {
     wins(userchoice, computerchoice);
-  } else if (userchoice == "r" && computerchoice == "s") {
-    lose(userchoice, computerchoice);
-  } else if (userchoice == "p" && computerchoice == "r") {
-    lose(userchoice, computerchoice);
   } else if (userchoice == "s" && computerchoice == "r") {
+    lose(userchoice, computerchoice);
+  } else if (userchoice == "r" && computerchoice == "p") {
+    lose(userchoice, computerchoice);
+  } else if (userchoice == "p" && computerchoice == "s") {
     lose(userchoice, computerchoice);
   }
 }
